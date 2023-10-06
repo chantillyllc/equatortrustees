@@ -1,3 +1,3 @@
-# Dhow Enterprises Ltd
+# Equator Trustees Limited. Ltd
 
-Create Dhow website using HTML &amp; CSS3
+Create Equator Trustees Limited website using HTML &amp; CSS3
