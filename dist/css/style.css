@@ -1,0 +1,177 @@
+:root {
+  --clr-gray: #cbd3e6;
+  --clr-theme: #f3bf72;
+  --linear-gold: linear-gradient(
+    to right,
+    #f3bf72 0%,
+    #efab45 50%,
+    #f1b254 100%
+  );
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #717379;
+}
+
+nav {
+  max-height: 100px;
+  line-height: 60px;
+}
+
+.navbar-brand {
+  width: 200px;
+}
+
+.contact__list {
+  max-height: 47px;
+}
+
+.contact__list .nav-item {
+  font-size: 0.813rem;
+  line-height: 1;
+}
+
+.contact__list li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #eaeaea;
+}
+
+.contact__list li:last-child::after {
+  display: none;
+}
+
+.contact__list li span {
+  color: #9b9b9b;
+}
+
+.contact__list li strong {
+  font-weight: 500;
+  color: #999999;
+}
+
+header .sticky-navbar {
+  background-image: var(--linear-gold);
+}
+
+.sticky-navbar .nav-link {
+  line-height: 60px;
+}
+
+.service-feature .number {
+  background: linear-gradient(to top, #f3bf72 0%, #dd9044 100%);
+  -webkit-background-clip: text;
+  counter-increment: special-heading;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Utilities Class */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+.list-disc {
+  list-style: disc;
+}
+
+.text-gray {
+  color: var(--clr-gray);
+}
+
+.text-theme {
+  color: var(--clr-theme);
+}
+
+.bg-gray {
+  background-color: var(--clr-gray);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.fs-17 {
+  font-size: 1.063rem;
+}
+
+.fs-16 {
+  font-size: 1rem;
+}
+
+.fs-15 {
+  font-size: 0.938rem;
+}
+
+.fs-14 {
+  font-size: 0.875rem;
+}
+
+.fs-12 {
+  font-size: 0.75rem;
+}
+
+.mr-14 {
+  margin-right: 0.875rem;
+}
+
+.mb-3px {
+  margin-bottom: 0.188rem;
+}
+
+.column-gap {
+  column-gap: 1.65rem;
+}
+
+.column-gap-24 {
+  column-gap: 1.5rem;
+}
+
+.column-gap-4 {
+  column-gap: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .sticky-navbar .column-gap {
+    column-gap: 0.75rem;
+  }
+
+  .sticky-navbar .nav-link {
+    line-height: 44px;
+    text-transform: capitalize !important;
+  }
+
+  .banner.content.fs-17 {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
